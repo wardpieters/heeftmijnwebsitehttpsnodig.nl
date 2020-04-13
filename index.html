@@ -8,7 +8,7 @@
 	<meta property="og:locale" content="nl_NL">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="Heeft mijn website HTTPS nodig?">
-	<meta property="og:description" content="Ontdek of jou website HTTPS nodig heeft.">
+	<meta property="og:description" content="Ontdek of jouw website HTTPS nodig heeft.">
 	<meta property="og:url" content="/">
 	<meta property="article:publisher" content="https://heeftmijnwebsitehttpsnodig.nl">
 	<meta property="article:tag" content="https">
@@ -17,12 +17,11 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Heeft mijn website HTTPS nodig?">
 	<meta name="twitter:description" content="Ontdek of jou website HTTPS nodig heeft.">
-	<meta name="twitter:creator" content="@bitsoffreedom">
 	<meta itemprop="name" content="Heeft mijn website HTTPS nodig?">
-	<meta itemprop="description" content="Ontdek of jou website HTTPS nodig heeft.">
+	<meta itemprop="description" content="Ontdek of jouw website HTTPS nodig heeft.">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 	<h1>
@@ -34,47 +33,87 @@
 
 	<h2>"Maar mijn website heeft geen contactformulier en verzamelt geen gegevens van gebruikers."</h2>
 	<p>
-		Verandert niks. HTTPS beveiligd meer dan alleen contactformulieren! HTTPS houd de URL, headers en inhoud van alle overgedragen paginas <b>vertrouwelijk</b>.
+		Verandert niks. HTTPS beveiligt meer dan alleen contactformulieren! HTTPS houdt de URL, headers en inhoud van
+		alle overgedragen pagina's <b>vertrouwelijk</b>.
 	</p>
 
 	<h2>"Er is toch niks gevoeligs op mijn website."</h2>
 	<p>
-		Je website is een aansprakelijkheid! Alleen omdat je website ergens veilig gehost word, betekent niet dat het niet door internetkabels en routers (beheerd door wie weet hoeveel bedrijven en staatsbedrijven) heen gaat. Wil je echt dat een derde partij JavaScript kan injecteren in jou website? Of dat een derde jou advertenties vervangt met <a href="https://justinsomnia.org/2012/04/hotel-wifi-javascript-injection/">hun eigen</a>, zodat jij geen inkomsten krijgt? Dit <a href="https://gist.github.com/ryankearney/4146814">gebeurt</a> bij <a href="https://twitter.com/konklone/status/598696478018666496">luchtvaartmaatschappijen</a> (<a href="https://www.theregister.co.uk/AMP/2015/01/06/gogo_ssl/">heel vaak</a> en <a href="https://twitter.com/troyhunt/status/691166196268417024">weer</a>), <a href="https://citizenlab.org/2015/04/chinas-great-cannon/">in China</a>, zelfs <a href="https://gist.github.com/Jarred-Sumner/90362639f96807b8315b">internetaanbieders</a> <a href="https://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/">doen het</a> (<a href="https://twitter.com/paul_irish/status/871431848957575168">heel vaak</a>). <b>HTTPS verkomt dit</b> allemaal. Het garandeert <b>integriteit</b> en de kundigheid om <b>aanpassingen te detecteren</b>. Als we alleen vetrouwelijke informatie versleutelen, word de transmissie van alles daar om heen automatisch een doelwit. Hou vertrouwelijke informatie veilig door alles te versleutelen.
+		Je website is een aansprakelijkheid! Alleen omdat je website ergens veilig gehost wordt, betekent niet dat het
+		niet door internetkabels en routers (beheerd door wie weet hoeveel bedrijven en staatsbedrijven) heen gaat.</p>
+	<p>Wil je echt dat een derde partij JavaScript kan injecteren in jouw website? Of dat een derde jouw advertenties
+		vervangt met <a href="https://justinsomnia.org/2012/04/hotel-wifi-javascript-injection/">haar eigen</a>,
+		zodat jij geen inkomsten krijgt? Dit <a href="https://gist.github.com/ryankearney/4146814">gebeurt</a> bij
+		<a href="https://twitter.com/konklone/status/598696478018666496">luchtvaartmaatschappijen</a>
+		(<a href="https://www.theregister.co.uk/AMP/2015/01/06/gogo_ssl/">vaak</a>,
+		<a href="https://twitter.com/troyhunt/status/691166196268417024">heel vaak</a>),
+		<a href="https://citizenlab.org/2015/04/chinas-great-cannon/">in China</a>,
+		zelfs <a href="https://gist.github.com/Jarred-Sumner/90362639f96807b8315b">internetaanbieders</a>
+		<a href="https://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/">doen het</a>
+		(<a href="https://twitter.com/paul_irish/status/871431848957575168">heel vaak</a>).
+	</p>
+	<p>
+		<b>HTTPS voorkomt dit allemaal.</b> Het garandeert <b>integriteit</b> en de mogelijkheid om <b>aanpassingen te detecteren</b>.
+		Als we alleen vetrouwelijke informatie versleutelen, wordt de transmissie van alles daaromheen automatisch een doelwit.
+		Houd vertrouwelijke informatie veilig door alles te versleutelen.
 	</p>
 
-	<h2>"De site is HTTP maar alle contactformulieren worden verzonden via HTTPS."</h2>
+	<h2>"De site is HTTP, maar alle contactformulieren worden verzonden via HTTPS."</h2>
 	<p>
-		Dit is even slecht als helemaal geen HTTPS gebruiken! Alles wat een aanvaller hoeft te doen is een linkje of de actie van een contactformulier aan te passen naar een URL van zijn/haar eigen server. Er is geen manier dit te detecteren omdat het over het net gebeurt via eenvoudige HTTP. <b>Versleuten de HELE site en stuur HTTP door naar HTTPS.</b>
+		Dit is net zo slecht als helemaal geen HTTPS gebruiken! Alles wat een aanvaller hoeft te doen,
+		is een linkje of de actie van een contactformulier aan te passen naar een URL van zijn/haar eigen server.
+		Er is geen manier dit te detecteren omdat het over het net gebeurt via onversleutelde HTTP.
+	</p>
+	<p>
+		<b>Pas HTTPS toe op de hele site en stuur bezoekers van de HTTP-variant door naar de HTTPS-pagina's!</b>
 	</p>
 
 	<h2>"Ik kan me geen certificaat veroorloven."</h2>
 	<p>
-		<a href="https://letsencrypt.org">Ze zijn gratis.</a>
+		<a href="https://letsencrypt.org/about/">Ze zijn gratis.</a>
 	</p>
 
 	<h2>"HTTPS is lastig om te installeren en te onderhouden."</h2>
 	<p>
-		Het werkt zonder configuratie als <a href="https://caddyserver.com">Caddy</a> je webserver is. Ja, het verniewen van certificaten inbegrepen. Geen omkijken naar nodig. Voor andere webservers kan HTTPS geautomatiseerd worden door <a href="https://letsencrypt.org/docs/client-options/">een Let's Encrypt client naar uw keuze te gebruiken</a>.
+		Het werkt zonder configuratie als <a href="https://caddyserver.com">Caddy</a> je webserver is.
+		Ja, het vernieuwen van certificaten inbegrepen. Geen omkijken naar nodig.
+		Voor andere webservers kan HTTPS geautomatiseerd worden door
+		<a href="https://letsencrypt.org/docs/client-options/">een Let's Encrypt-client naar keuze te gebruiken</a>.
 	</p>
 
 	<h2>"Hackers kunnen nog steeds een kopie van mijn website maken, zelfs al gebruik ik HTTPS."</h2>
 	<p>
-		Ze kunnen het proberen, maar zolang de geheime sleutels geheim blijven zullen webbrowsers waarschuwingen geven als de aanvallers een niet-passend paar of niet-geldige TLS certificaten presenteren. Als de aanvaller helemaal geen HTTPS gebruikt zullen webbrowsers de namaak pagina markeren als onveilig. Op deze manier garandeerd HTTPS  <b>echtheid</b>.
+		Ze kunnen het proberen, maar zolang de geheime sleutels geheim blijven zullen webbrowsers waarschuwingen
+		geven als de aanvallers een haar eigen sleutels of niet-geldige TLS-certificaten gebruiken.
+		Als de aanvaller helemaal geen HTTPS gebruikt, zullen webbrowsers de namaak-pagina markeren als onveilig.
+		Op deze manier garandeert HTTPS <b>echtheid</b>.
+		<!-- TODO: HSTS adden -->
 	</p>
 
-	<h2>"Domain-validated (DV) certificaten zijn onveilig."</h2>
+	<h2>"Domain-validated (DV)-certificaten zijn onveilig."</h2>
 	<p>
-    Ze zijn wel veilig. Verlies geen controle over je DNS en kies een <a href="https://letsencrypt.org">bekwaam certificaatautoriteit</a> (inplaats van <a href="https://www.godaddy.com/garage/godaddy/information-about-ssl-bug/">minder bekwame</a> of <a href="https://groups.google.com/a/chromium.org/d/msg/blink-dev/eUAKwjihhBs/rpxMXjZHCQAJ">zelfs pijnlijk</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1311713">slechte</a>). Er is absoluut geen verschil in de versleuteling in een DV certificaat vergeleken met dat van een <a href="https://nl.wikipedia.org/wiki/Uitgebreid_gevalideerd_SSL-certificaat">uitgebreid gevalideerd SSL-certificaat</a>.
+    	Ze zijn wel veilig. Verlies geen controle over je DNS en kies een
+		<a href="https://letsencrypt.org">bekwame certificaatautoriteit</a>
+		(in plaats van <a href="https://www.godaddy.com/garage/godaddy/information-about-ssl-bug/">een minder bekwame</a>
+		of <a href="https://groups.google.com/a/chromium.org/d/msg/blink-dev/eUAKwjihhBs/rpxMXjZHCQAJ">zelfs pijnlijk</a>
+		<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1311713">slechte</a>).
+		Er is absoluut geen verschil in de versleuteling bij gebruik van een DV-certificaat vergeleken met die van een
+		<a href="https://nl.wikipedia.org/wiki/Uitgebreid_gevalideerd_SSL-certificaat"><i>extended validation</i> SSL-certificaat</a>.
 	</p>
 
-	<h2>"But CAs can misissue for my site any day &lt;...or any other complaint about the CA system&gt;."</h2>
+	<h2>"Maar <i>CAs</i> kunnen een fout maken tijdens het uitgeven van een certificaat voor mijn site &lt;...of elk
+		andere klacht over het huidige <i>CA</i>-systeem &gt;."</h2>
 	<p>
-		Look, this discussion isn't about PKI. It's the best system we've got for right now. Deal with it and secure your site. Use <a href="https://tools.ietf.org/html/rfc6844">CAA records</a> to restrict which CAs can issue certificates for your site, then cross your fingers and hope transparency and oversight works (it does, so far).
+		Kijk, deze discussie gaat niet over <i>PKI</i>. Dat is het beste systeem dat we op dit moment hebben.
+		Daar moet je het mee doen. Gebruik <i><a href="https://tools.ietf.org/html/rfc6844">CAA records</a></i>
+		om te beperken welke <i>CAs</i> er certificaten voor jouw domein mogen uitgeven. Kruis dan je vingers en hoop
+		dat transparantie en toezicht z'n werk doet (dat doet het, tot nu toe).
 	</p>
 
 	<h2>"HTTPS verbergt niet de grootte van versleutelde berichten, wat aanwijzingen over de data lekt aan hackers."</h2>
 	<p>
-		TLS 1.3 en HTTP/2 maken gebruik van <a href="https://tlswg.github.io/tls13-spec/#rfc.section.5.4">padding frames</a> om de grootte van de versleutelde berichten zo willekeurig mogelijk te maken.
+		TLS 1.3 en HTTP/2 maken gebruik van <a href="https://tlswg.github.io/tls13-spec/#rfc.section.5.4">padding frames</a>
+		om de grootte van de versleutelde berichten zo willekeurig mogelijk te maken.
 	</p>
 
 	<h2>"HTTPS verbergt niet de DNS lookup."</h2>
@@ -82,9 +121,9 @@
 		Natuurlijk niet. DNS is niet HTTP. Alleen is dat echt een valide reden om de rest niet te versleutelen?? (Hint: nee)
 	</p>
 
-	<h2>"HTTPS is sloom."</h2>
+	<h2>"HTTPS is langzaam."</h2>
 	<p>
-		<a href="https://istlsfastyet.com/">Nee dat is het niet.</a> Websites met moderne servers laden sneller over HTTPS dan over HTTP door HTTP/2.
+		<a href="https://istlsfastyet.com/">Nee, dat is het niet.</a> Websites met moderne servers laden sneller over HTTPS dan over HTTP door HTTP/2.
 	</p>
 
 	<h2>"Phishing websites gebruiken HTTPS."</h2>
@@ -92,69 +131,75 @@
 		... en daarom jij niet?
 	</p>
 
-	<h2>"Our site displays ads over HTTP."</h2>
+	<h2>"Onze site geeft advertenties weer via HTTP."</h2>
 	<p>
-		Sorry, not sorry. Doesn't change the fact that <b>your site still needs HTTPS</b>. Switching to HTTPS with ads still over HTTP will cause mixed content warnings in browsers, so you better figure out a cute way to wiggle out of that ad publishing contract that looked really attractive when you first signed it, or convince your ad network to move to HTTPS before you do.
+		Sorry, het spijt me niet. Dit verandert niets aan het feit dat <b>je website HTTPS nodig heeft</b>.
+		Met de overstap naar HTTPS zul je <i><a href="https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content">mixed content</a></i>
+		waarschuwingen gaan krijgen in browser. Je kunt dus maar beter een leuke manier bedenken om uit dat
+		advertentiepublicatiecontract te komen dat er echt aantrekkelijk uitzag toen u het voor het eerst ondertekende.
+		Of overtuig je advertentienetwerk om HTTPS te gaan gebruiken voordat jij het doet.
 	</p>
 
-	<h2>"Het werkt met HTTP net zo goed."</h2>
+	<h2>"Mijn site werkt net zo goed met HTTP."</h2>
 	<p>
-		Dat is wat <a href="https://arstechnica.com/security/2017/03/firefox-gets-complaint-for-labeling-unencrypted-login-page-insecure/">Oil and Gas International</a> ook beweerde. Tot dat browsers HTTP als onveilig markeerde.
+		Dat is wat <a href="https://arstechnica.com/security/2017/03/firefox-gets-complaint-for-labeling-unencrypted-login-page-insecure/">Oil and Gas International</a>
+		ook beweerde. Tot dat <a href="https://tweakers.net/nieuws/138767/chrome-verwijdert-aanduiding-veilig-in-adresbalk-bij-https-sites.html">browsers HTTP als onveilig markeerde</a>.
 	</p>
 
-	<h2>"But TLS proxies break the guarantees of HTTPS."</h2>
+	<h2>"Maar TLS proxies maken HTTPS overbodig."</h2>
 	<p>
-		Only if the end user's computer is modified to trust the TLS proxy. This requires administrator (root) privileges, so the owner of the computer must allow it. Besides, <a href="https://jhalderm.com/pub/papers/interception-ndss17.pdf">HTTPS interception</a> can usually <a href="https://caddyserver.com/docs/mitm-detection">be detected by web servers</a>.
+		Alleen als de eindgebruiker zijn computer is ingesteld om de TLS proxy te vertrouwen.
+		Hiervoor heb je administrator (root) rechten nodig, dus de eigenaar moet dit toestaan.
+		Daarnaast wordt <a href="https://jhalderm.com/pub/papers/interception-ndss17.pdf">HTTPS onderschepping</a>
+		vaak <a href="https://caddyserver.com/docs/mitm-detection">gedetecteerd door web servers</a>.
 	</p>
 
-	<h2>"At least I can still serve my site over both HTTP and HTTPS."</h2>
-  <h2>"Iniedergeval kan ik mijn website beide over HTTP en HTTPS serveren"</h2>
+	<h2>"Ik kan mijn site tenminste nog steeds zowel via HTTP als HTTPS leveren.'"</h2>
 	<p>
-    De enige rol die poort 80 op je server zou moeten spelen is dat van het doorsturen van alle aanvragen naar poort 443.
-		The only reason you should open port 80 on your server is to redirect all requests to port 443 and then close the connection on port 80. (Someday, maybe we can drop port 80 altogether.)
+		De enige reden waarom je poort 80 open moet stellen op je server is om alle aanvragen door te sturen naar poort
+		443 en vervolgens de verbinding te sluiten. (Op een dag kunnen we poort 80 misschien helemaal laten vallen.)
 	</p>
 
-	<h2>"My site is only accessible internally or with a VPN."</h2>
+	<h2>"Mijn site is alleen intern of met een VPN bereikbaar."</h2>
 	<p>
-		How much do you trust the corporation or state that owns the infrastructure? And the companies that produced the hardware that comprises your network? <a href="https://www.troyhunt.com/the-importance-of-trust-and-integrity-in-a-vpn-provider-and-how-mysafevpn-blew-it/">Or the VPN provider</a>?
+		Vertrouw je de bedrijven of overheden die de infrastructuur beheren?
+		En de fabrikanten van de hardware in jouw netwerk?
+		Of je <a href="https://www.troyhunt.com/the-importance-of-trust-and-integrity-in-a-vpn-provider-and-how-mysafevpn-blew-it/">VPN-provider</a>?
 	</p>
 
 	<h2>"We hashen de wachtwoorden."</h2>
 	<p>
-		Mooi. Vertel me nu alsjeblieft wel dat ze verstuurd worden via HTTPS. ... dat doe je toch?
+		Mooi. Vertel me alsjeblieft wel dat ze verstuurd worden via HTTPS &hellip; dat doe je toch?
 	</p>
 
-	<h2>"HTTPS impacts SEO."</h2>
+	<h2>"HTTPS beïnvloedt SEO."</h2>
 	<p>
-		You're right&mdash;HTTPS improves it! Switching site URLs improperly <b>may</b> impact your search rankings, but <a href="https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html">HTTPS actually improves them</a>. Just do the switch properly according to the search engine you're optimizing for, and everything will be fine, with only temporary side-effects at most.
+		Dat klopt&mdash;HTTPS verbetert het! Het onnodig of onjuist veranderen van site-URLs beïnvloedt <b>mogelijk</b>
+		je positie in de zoekresultaten. Het gebruik van <a href="https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html">HTTPS verbetert je positie</a>
+		juist. Verander de URL's op de juiste manier volgens de manier van de zoekmachine waarvoor je optimaliseert. Alles komt goed, met hooguit tijdelijke bijwerkingen.
 	</p>
 
-	<h2>"It's the browser's job to keep users safe."</h2>
+	<h2>"Het is de verantwoordelijkheid van de browser om gebruikers te beschermen."</h2>
 	<p>
-		True, but incomplete. It is not SOLELY the browser's job. Browsers can only keep the users safe if the server provides credentials through an HTTPS certificate. As a site owner, it's your responsibility to provide these credentials for your clients.
+		Dat klopt, maar tot op zekere hoogte. Het is niet alleen de verantwoordelijkheid van de browser.
+		Browsers kunnen alleen een gebruiker beschermen als de server gebruik maakt van HTTPS.
+		Als site eigenaar heb je de verantwoordelijkheid om dit aan te bieden aan bezoekers.
 	</p>
 
 	<h2>&mdash; HOE CONFIGUREER IK HTTPS &mdash;</h2>
 	<p>
-		De makkelijkste manier is via <a href="https://letsencrypt.org">Let's Encrypt</a> en de <a href="https://caddyserver.com">Caddy web server</a>, die automagisch HTTPS configureerd voor al je websites. Je kan ook een makkelijke, op zich zelf staande Let's Encrypt client gebruiken genaamd <a href="https://github.com/xenolf/lego">lego</a>, wat op elk platform draait.
+		De makkelijkste manier is via <a href="https://letsencrypt.org">Let's Encrypt</a> en de <a href="https://caddyserver.com">Caddy web server</a>,
+		die automagisch HTTPS configureert voor al je websites. Je kan ook een Let's Encrypt-client gebruiken zoals <a href="https://certbot.eff.org/instructions">Certbot</a>.
 	</p>
 	<p>
-		Als je liever integratie hebt met bestaande web servers, werkt de client afkomstig van de EFF genaamd <a href="https://certbot.eff.org/">Certbot</a> ook heel goed.
-	</p>
-	<p>
-		Er zijn genoeg andere manieren om HTTPS op je website te krijgen zonder veel gedoe. <a href="https://dassur.ma/things/h2setup/">Das Surma heeft een tutorial voor veel web servers</a> en CDNs zoals <a href="https://www.cloudflare.com">Cloudflare</a> kunnen je website beschikbaar maken over HTTPS voor minimale kosten, of zelfs helemaal gratis.
+		Er zijn genoeg andere manieren om HTTPS op je website te krijgen zonder veel moeite.
+		Das Surma heeft een <a href="https://dassur.ma/things/h2setup/">tutorial</a> gemaakt voor veel web servers en <i>CDNs</i> zoals
+		<a href="https://www.cloudflare.com">Cloudflare</a> kunnen je website beschikbaar maken over HTTPS voor minimale kosten, of zelfs helemaal gratis.
 	</p>
 
 	<footer>
-		Mede mogelijk gemaakt door <a href="https://twitter.com/mholt6">Matt Holt</a> en <a href="https://bof.nl/">Bits of Freedom</a>.
-		<!-- Wees lief en doneer wat aan Bits of Freedom! https://bof.nl/doneren/-->
+		<p>Mede mogelijk gemaakt door <a href="https://twitter.com/mholt6">Matt Holt</a> en <a href="https://wardpieters.nl/">Ward Pieters</a>.</p>
+		<p>Originele broncode: <a href="https://github.com/emansom/heeftmijnwebsitehttpsnodig.nl">emansom</a> (<a href="https://github.com/emansom/heeftmijnwebsitehttpsnodig.nl/blob/master/LICENSE">Licentie</a>)</p>
 	</footer>
 </body>
 </html>
-
-<!--
-Websites die HTTPS nodig hebben:
-	- alle websites
-
-Als je het lief hebt, kun je er beter een slot op doen.
--->
